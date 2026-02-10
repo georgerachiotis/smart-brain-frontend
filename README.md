@@ -33,7 +33,7 @@ REACT_APP_API_URL=http://localhost:3000
 
 ### 4. Start the app
 ```bash
-npm start
+npm run dev
 ```
 The app will run on http://localhost:3000.
 
