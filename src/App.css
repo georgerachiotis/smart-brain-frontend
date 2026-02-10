@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#root {
+  width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
