@@ -20,7 +20,7 @@ const Register = ({ onRouteChange, loadUser }) => {
     const onSubmitRegister = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:3000/register', {
+        fetch('https://smart-brain-backend-0wo0.onrender.com/register', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

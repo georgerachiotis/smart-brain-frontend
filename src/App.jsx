@@ -77,7 +77,7 @@ function App() {
     if (!input.trim()) return;
     setImageUrl(input);
     setBoxes([]); 
-    fetch('http://localhost:3000/clarifai', {
+    fetch('https://smart-brain-backend-0wo0.onrender.com/clarifai', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ imageUrl: input })
@@ -95,7 +95,7 @@ function App() {
         const ratios = regions.map((r) => r.region_info.bounding_box);
         setFaceRatioBoxes(ratios);
         if (user.id) {
-          fetch('http://localhost:3000/image', {
+          fetch('https://smart-brain-backend-0wo0.onrender.com/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ id: user.id })
